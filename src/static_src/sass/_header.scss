@@ -1,4 +1,6 @@
 .header_content {
+  max-width: 1011px;
+  margin: auto;
   border-bottom: 1px solid #dbddde;
 }
 
@@ -71,25 +73,16 @@
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin: 27px 0 14px 38px;
+    margin: 27px 0 14px 21px;
   }
 
   .search-form {
     float: right;
-    margin-top: 47px;
-    margin-bottom: 0;
-    margin-right: 34px;
-
+    margin: 47px 23px 0 0;
 
     #magnifier-button {
       right: 10px;
       top: 4px;
     }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    width: 1011px;
   }
 }

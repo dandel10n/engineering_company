@@ -1,18 +1,12 @@
 .prof_areas {
   font-family: Arial, sans-serif;
   font-weight: 700;
-  width: 100%;
+  max-width: 1011px;
+  margin: auto;
 
   .area_blocks {
     min-height: 121px;
     border-bottom: 1px solid #dbddde;
-    max-width: 1011px;
-    padding-left: 50px;
-
-
-    li {
-      float: left;
-    }
 
     li a {
       display: block;
@@ -21,7 +15,7 @@
       text-decoration: none;
       min-height: 121px;
       line-height: 1.2;
-      padding: 35px 20px 0;
+      padding: 35px 15px 0;
       text-align: left;
     }
 
@@ -74,4 +68,20 @@
   background: url(../img/icons_sprite.png) 0 0 no-repeat;
   width: 31px;
   height: 40px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .prof_areas {
+    .area_blocks {
+      li {
+        display: inline-block;
+        float: left;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
 }

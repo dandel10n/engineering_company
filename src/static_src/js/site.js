@@ -9,6 +9,6 @@ $(document).ready(function(){
     });
 
     $(".menu_button").click(function() {
-        $('#nav').toggleClass("navigation_active");
+        $('#nav').toggleClass("nav-content_active");
     });
 });
