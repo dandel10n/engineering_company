@@ -2,35 +2,67 @@
   display: none;
 }
 
+.menu_button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url(../img/hamburger_menu_sprite.png) 0 0 no-repeat;
+
+  &:hover {
+    background: url(../img/hamburger_menu_sprite.png) -40px 0 no-repeat;
+  }
+}
+
 .navigation_active {
   display: block;
   position: absolute;
-  top: 77px;
+  top: 203px;
   left: 0;
   width: 100%;
-  background-color: #252525;
-  margin-bottom: 1rem;
-  order: 4;
+  margin-bottom: 12px;
   z-index: 5;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  background-color: #fff;
 }
 
-.navigation__button {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  font-size: 16px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  height: 33px;
-  line-height: 33px;
+.nav_content {
+  li {
+    width: 100%;
+    text-align: center;
+  }
 
-  &:hover {
-    background-color: #4e26fd;
+  li a {
+    display: block;
+    font-size: 15px;
+    color: #62676d;
+    text-decoration: none;
+    height: 43px;
+    line-height: 43px;
+  }
+
+  li.active a {
+    background: #3c4148;
+    color: #fff;
+  }
+
+  li a:hover {
+    background: $main-color;
+    color: #fff;
   }
 }
 
 @media screen and (min-width: 768px) {
+
+  .menu_button {
+    display: none;
+  }
+
+  .navigation_active {
+    display: block;
+    position: static;
+    margin-bottom: 0;
+  }
 
   .navigation {
     display: block;
@@ -39,16 +71,16 @@
     font-weight: 700;
 
     .nav_content {
-      margin-left: 100px;
 
       li {
         float: left;
+        width: auto;
         text-align: center;
       }
 
       li a {
         display: block;
-        font-size: 15px;
+        font-size: 14px;
         color: #62676d;
         text-decoration: none;
         height: 43px;
@@ -56,14 +88,21 @@
         padding: 0 20px;
       }
 
-      li.active a {
-        background: #3c4148;
+      li.active a,
+      li a:hover {
         color: #fff;
       }
+    }
+  }
+}
 
-      li a:hover {
-        background: $main-color;
-        color: #fff;
+@media screen and (min-width: 1024px) {
+  .navigation {
+    .nav_content {
+      margin-left: 100px;
+
+      li a {
+        font-size: 15px;
       }
     }
   }

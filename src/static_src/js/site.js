@@ -7,4 +7,8 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 7500
     });
+
+    $(".menu_button").click(function() {
+        $('#nav').toggleClass("navigation_active");
+    });
 });
