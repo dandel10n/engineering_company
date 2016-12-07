@@ -41,12 +41,12 @@
     .nav_content {
       margin-left: 100px;
 
-      & li {
+      li {
         float: left;
         text-align: center;
       }
 
-      & li a {
+      li a {
         display: block;
         font-size: 15px;
         color: #62676d;
@@ -56,12 +56,12 @@
         padding: 0 20px;
       }
 
-      & li.active a {
+      li.active a {
         background: #3c4148;
         color: #fff;
       }
 
-      & li a:hover {
+      li a:hover {
         background: $main-color;
         color: #fff;
       }

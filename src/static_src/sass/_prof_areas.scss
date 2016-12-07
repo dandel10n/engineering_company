@@ -1,0 +1,77 @@
+.prof_areas {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  width: 100%;
+
+  .area_blocks {
+    min-height: 121px;
+    border-bottom: 1px solid #dbddde;
+    max-width: 1011px;
+    padding-left: 50px;
+
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      font-size: 13px;
+      color: #3c4148;
+      text-decoration: none;
+      min-height: 121px;
+      line-height: 1.2;
+      padding: 35px 20px 0;
+      text-align: left;
+    }
+
+    li a:hover {
+      background: #eee;
+    }
+
+    &:after {
+      content: ' ';
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.prof_area {
+  display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icon_project {
+  background: url(../img/icons_sprite.png) -129px 0 no-repeat;
+  width: 27px;
+  height: 42px;
+}
+
+.icon_build {
+  background: url(../img/icons_sprite.png) -93px 0 no-repeat;
+  width: 36px;
+  height: 37px;
+}
+
+.icon_expert {
+  background: url(../img/icons_sprite.png) -67px 0 no-repeat;
+  width: 26px;
+  height: 36px;
+}
+
+.icon_tech {
+  background: url(../img/icons_sprite.png) -31px 0 no-repeat;
+  width: 36px;
+  height: 34px;
+}
+
+.icon_lab {
+  background: url(../img/icons_sprite.png) 0 0 no-repeat;
+  width: 31px;
+  height: 40px;
+}
