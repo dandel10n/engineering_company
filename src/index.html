@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
     <head>
         <meta charset="UTF-8">
         <title>Engineering company</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="static/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="static/css/slick.css"/>
         <link rel="stylesheet" href="static/css/style.css">
@@ -12,8 +14,97 @@
     <body>
 
         <header>
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="header_content">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6 col-lg-6">
+                                    <div class="logo">
+                                        <a href="/" class="logo_img"></a>
+                                        <div class="logo_text">
+                                            Логотип<br>
+                                            <span>Инжиниринговая компания</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-lg-6">
+                                    <form method="post" id="search" action="" class="search-form">
+                                        <input type="text" name="search_param" class="search-form__input">
+                                        <input type="submit" value="" id="magnifier-button">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
+
+        <nav class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav_content">
+                            <li><a href="/" >О компании</a></li>
+                            <li><a href="/" >Услуги</a></li>
+                            <li><a href="/" >Объекты</a></li>
+                            <li><a href="/" >Закупки</a></li>
+                            <li class="active"><a href="/" >Партнеры</a></li>
+                            <li><a href="/" >Новости</a></li>
+                            <li><a href="/" >Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="slick_slider">
+                            <div class="slide slide1">
+                                <div class="slide_content">
+                                    <p class="banner">Наши компетенции</p>
+                                    <div class="slide_title">Объекты<br> химической<br> промышленности</div>
+                                    <p class="slide_text">Важнейшим преимуществом компании является способность проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="slide_content">
+                                    <p class="banner">Banner</p>
+                                    <div class="slide_title">Banner title</div>
+                                    <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="slide slide3">
+                                <div class="slide_content">
+                                    <p class="banner">Banner</p>
+                                    <div class="slide_title">Banner title</div>
+                                    <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="slide slide4">
+                                <div class="slide_content">
+                                    <p class="banner">Banner</p>
+                                    <div class="slide_title">Banner title</div>
+                                    <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="slide slide5">
+                                <div class="slide_content">
+                                    <p class="banner">Banner</p>
+                                    <div class="slide_title">Banner title</div>
+                                    <p class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <script src="static/js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="static/js/slick.min.js"></script>
