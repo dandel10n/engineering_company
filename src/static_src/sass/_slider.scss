@@ -19,9 +19,9 @@
 }
 
 .banner {
-  width: 194px;
-  height: 29px;
-  text-align: center;
+  display: inline-block;
+  padding: 0 10px;
+  min-height: 29px;
   line-height: 29px;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
