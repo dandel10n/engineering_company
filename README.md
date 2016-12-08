@@ -1,4 +1,4 @@
-# engineering_company
+# Engineering company project
 
 ## How to clone the project
 ```
