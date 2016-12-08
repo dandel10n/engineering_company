@@ -1,12 +1,16 @@
 .prof_areas {
-  font-family: Arial, sans-serif;
   font-weight: 700;
-  max-width: 1011px;
   margin: auto;
 
   .area_blocks {
     min-height: 121px;
+    max-width: 1011px;
+    margin: auto;
     border-bottom: 1px solid #dbddde;
+
+    li {
+      margin: 0 -15px;
+    }
 
     li a {
       display: block;
@@ -77,11 +81,24 @@
       li {
         display: inline-block;
         float: left;
+        margin: 0;
+        width: 30%;
       }
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .prof_areas {
+    .area_blocks {
 
+      li {
+        width: auto;
+      }
+
+      li:first-child a {
+        padding-left: 50px;
+      }
+    }
+  }
 }
