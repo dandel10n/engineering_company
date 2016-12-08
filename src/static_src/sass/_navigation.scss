@@ -60,15 +60,15 @@
     display: none;
   }
 
-  .nav-content_active {
-    display: block;
-    position: static;
-    margin-bottom: 0;
-  }
-
   .navigation {
     .nav-content {
       display: block;
+
+      &.nav-content_active {
+        display: block;
+        position: static;
+        margin-bottom: 0;
+      }
 
       li {
         float: left;
